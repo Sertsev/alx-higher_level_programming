@@ -3,8 +3,8 @@ def square_matrix_simple(matrix=[]):
     sqr = []
     for i in matrix:
         sqrr = []
-	for j in i:
+        for j in i:
             j = j*j
-	    sqrr.append(j)
-	sqr.append(sqrr)
+            sqrr.append(j)
+        sqr.append(sqrr)
     return sqr
