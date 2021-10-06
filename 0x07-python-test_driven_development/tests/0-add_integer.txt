@@ -1,0 +1,10 @@
+add_integer(1, 9)
+10
+add_integer(3, 4.5)
+7
+add_integer("ass", 4)
+a must be an integer
+add_integer(5, "Are")
+b must be an integer
+add_integer(None, None)
+a must be an integer
