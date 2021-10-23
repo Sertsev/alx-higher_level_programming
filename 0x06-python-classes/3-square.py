@@ -2,10 +2,7 @@
 """ a class to define a size of square """
 
 
-square1 = __import__("1-square").Square
-
-
-class Square(square1):
+class Square():
     """ a class to defin and calculate area of the square
     Args:
         square1 (class): a class which define a square with size
@@ -21,10 +18,16 @@ class Square(square1):
             TypeError: size must be an integer
             ValueError: size must be >= 0
         """
-        square1.__size = size
-        self.__size = square1.__size
-
-        if type(square1.__size) != int:
+        self.__size = size
+        if type(self.__size) != int:
             raise TypeError('size must be an integer')
-        elif square1.__size < 0:
+        elif self.__size < 0:
             raise ValueError('size must be >= 0')
+
+    def area(self):
+        """ finding the area of the square
+
+        Returns:
+            int: the are of the square
+        """
+        return self.__size**2
