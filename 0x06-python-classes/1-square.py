@@ -4,15 +4,9 @@ square0 = __import__("0-square").Square
 
 
 class Square(square0):
-    """ an inherited class from Square definition class
-    Args:
-        square0 (class): a class which defin a square
-    """
+    """ an inherited class from Square definition class """
 
     def __init__(self, size):
-        """initialization function
-        Args:
-            size (integer): a size attribute passed
-        """
-
+        """initialization function"""
+        
         self.__size = size
