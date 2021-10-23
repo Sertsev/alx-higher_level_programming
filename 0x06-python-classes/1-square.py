@@ -1,9 +1,15 @@
 #!/usr/bin/python3
-""" defines a square"""
+""" a class to define a size of square """
 
 
-class Square:
-    """Square Class"""
+class Square(square0):
+    """ an inherited class from Square definition class
+    Args:
+        square0 (class): a class which defin a square
+    """
     def __init__(self, size):
-        """Initialize class"""
+        """initialization function
+        Args:
+            size (integer): a size attribute passed
+        """
         self.__size = size
