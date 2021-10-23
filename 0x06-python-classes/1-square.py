@@ -3,6 +3,8 @@
 
 
 square0 = __import__("0-square").Square
+
+
 class Square(square0):
     """ an inherited class from Square definition class
     Args:
