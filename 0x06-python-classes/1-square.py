@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-square0 = __import__("0-square").Square
 """ a class to define a size of square """
 
+
+square0 = __import__("0-square").Square
 
 class Square(square0):
     """ an inherited class from Square definition class """
