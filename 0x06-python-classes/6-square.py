@@ -22,7 +22,7 @@ class Square():
         self.__position = position
 
         for pos in self.__position:
-            if not pos >= 0:
+            if pos < 0 or type(pos) != int:
                 error = 'position must be a tuple of 2 positive integers'
                 raise TypeError(error)
 
