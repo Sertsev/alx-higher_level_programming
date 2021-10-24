@@ -79,6 +79,7 @@ class Square():
         """printing the square"""
         if self.__size == 0:
             print()
+        print('\n'*self.__position[1], end="")
         for i in range(self.__size):
             for k in range(self.__position[0]):
                 print(' ', end="")
@@ -89,3 +90,6 @@ class Square():
     @property
     def position(self):
         return self.__position
+
+my_square = Square(5, (3, 2))
+my_square.my_print()
