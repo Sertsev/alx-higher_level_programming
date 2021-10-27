@@ -13,13 +13,13 @@ class Node:
             data (int): an integer value to add to the node
             next_node (Node, optional): a future node. Defaults to None.
         """
-        # if type(data) != int:
-        #     raise TypeError('data must be an integer')
+        if type(data) != int:
+            raise TypeError('data must be an integer')
 
         self.__data = data
 
-        # if not next_node == None or type(next_node) == Node:
-        #     raise TypeError('next_node must be a Node object')
+        if next_node is not None and type(next_node) is not Node:
+            raise TypeError('next_node must be a Node object')
 
         self.__next_node = next_node
 
@@ -67,7 +67,7 @@ class Node:
         Raises:
             TypeError: raises if not node type
         """
-        if value is None and isinstance(value, Node):
+        if value is not None and type(value) is not Node:
             raise TypeError('next_node must be a Node object')
         else:
             self.__next_node = value
@@ -120,3 +120,24 @@ class SinglyLinkedList:
             tmp = tmp.next_node
 
         return string
+
+
+n1 = Node(3)
+print(n1.data)
+
+n2 = Node(-5)
+print(n2.data)
+
+n3 = Node(4)
+n3.next_node = n2
+print(n3.next_node.data)
+
+try:
+    n4 = Node("4")
+except Exception as e:
+    print(e)
+
+try:
+    n2.next_node = "Node"
+except Exception as e:
+    print(e)
