@@ -116,7 +116,7 @@ class Square():
         """
         return self.__size > other.__size
 
-    def __le__(self, other):
+    def __ge__(self, other):
         """greater than or equal to comparison
 
         Args:
@@ -126,3 +126,13 @@ class Square():
             boolean: comparison result
         """
         return self.__size >= other.__size
+
+
+s1 = Square(3)
+s2 = Square(10)
+print(s1 > s2)
+print(s1 >= s2)
+print(s1 < s2)
+print(s1 <= s2)
+print(s1 == s2)
+print(s1 != s2)
