@@ -82,3 +82,47 @@ class Square():
             boolean: comparison result
         """
         return self.__size <= other.__size
+
+    def __eq__(self, other):
+        """ equal to comparison
+
+        Args:
+            other (instance): another square instance
+
+        Returns:
+            boolean: comparison result
+        """
+        return self.__size == other.__size
+
+    def __ne__(self, other):
+        """not equal to comparison
+
+        Args:
+            other (instance): another square instance
+
+        Returns:
+            boolean: comparison result
+        """
+        return self.__size != other.__size
+
+    def __gt__(self, other):
+        """greater than comparison
+
+        Args:
+            other (instance): another square instance
+
+        Returns:
+            boolean: comparison result
+        """
+        return self.__size > other.__size
+
+    def __le__(self, other):
+        """greater than or equal to comparison
+
+        Args:
+            other (instance): another square instance
+
+        Returns:
+            boolean: comparison result
+        """
+        return self.__size >= other.__size
