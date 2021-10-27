@@ -126,13 +126,3 @@ class Square():
             boolean: comparison result
         """
         return self.__size >= other.__size
-
-
-s1 = Square(3)
-s2 = Square(10)
-print(s1 > s2)
-print(s1 >= s2)
-print(s1 < s2)
-print(s1 <= s2)
-print(s1 == s2)
-print(s1 != s2)
